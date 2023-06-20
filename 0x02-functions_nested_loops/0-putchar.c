@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include "main.h"
 /**
 * main - printing out _putchar using printf
 * Description: using putchar to print _putchar
