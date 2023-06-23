@@ -15,13 +15,14 @@ _putchar('\n');
 else
 {
 int i, j;
-for (i = 0; i < n; i++)
+
+for (i = 0 ; i < n ; i++)
 {
-for (j = 0; j < n; j++)
+for (j = 0 ; j < n ; j++)
 {
-if (j == 1)
+if (j == i)
 _putchar('\\');
-else if (j < 1)
+else if (j < i)
 _putchar(' ');
 }
 _putchar('\n');
