@@ -8,13 +8,13 @@
 */
 void rev_string(char *s)
 {
-int i, length;
+int i, l;
 char c;
-for (length = 0; s[length] != '\0'; length++)
-for (i = 0; i < length / 2; i++)
+for (l = 0; s[l] != '\0'; l++)
+for (i = 0; i < l / 2; i++)
 {
 c = s[i];
-s[i] = s[length - 1 - i];
-s[length - 1 - i] = c;
+s[i] = s[l - 1 - i];
+s[l - 1 - i] = c;
 }
 }
