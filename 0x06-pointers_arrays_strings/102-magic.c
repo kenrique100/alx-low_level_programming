@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - print magic numbers
- *
- * Return: always 0
- */
+* main - print magic numbers
+*
+* Return: always 0
+*/
 
 int main(void)
 {
