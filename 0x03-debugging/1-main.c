@@ -3,8 +3,10 @@
 
 /**
 * main - causes an infinite loop
-* description: function will cause an infinite loop
-* Return: 0
+*
+* description: function will cause an infinite loop \\0/\n
+*
+* Return: Always 0
 */
 
 int main(void)
