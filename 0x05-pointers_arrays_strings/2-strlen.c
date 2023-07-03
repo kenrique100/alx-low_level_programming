@@ -4,14 +4,17 @@
 *
 * @s: string parameter to be read
 *
-* Return : Length of string
+* Return: Length of string
 */
 int _strlen(char *s)
 {
-	int counter;
+int i;
 
-	for (counter = 0; *s != '\0'; ++s)
-		counter++;
-
-	return (counter);
+i = 0;
+while (*s != '\0')
+{
+i++;
+s++;
+}
+return (i);
 }
