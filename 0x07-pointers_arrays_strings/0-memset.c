@@ -7,15 +7,16 @@
 * @b: input variable of char type represents the character to fill
 * @n: number of bytes to be filled
 *
-* Return: a pointer wiyh values in bytes
+* Return: a pointer with values in bytes
 */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-int i;
+unsigned int i;
 for (i = 0; i < n; i++)
 {
 s[i] = b;
+n--;
 }
 return (s);
 }
