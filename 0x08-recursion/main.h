@@ -12,5 +12,6 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int _putchar(char c);
 int checker(int n, int base);
+int checker1(char *str, int len, int count);
 
 #endif
