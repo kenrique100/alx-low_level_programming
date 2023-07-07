@@ -33,21 +33,3 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h
 * Don’t forget to push your header file
 * You are allowed to use the standard library
-# Shell Scripts
-* Allowed editors: *vi, vim, emacs*
-* All your scripts will be tested on Ubuntu 20.04 LTS
-* All your scripts should be exactly two lines long (*$ wc -l file* should print 2)
-* All your files should end with a new line
-* The first line of all your files should be exactly *#!/bin/bash*
-# More Info
-## Betty linter
-To run the Betty linter just with command *betty <filename>:*
-* Go to the [Betty](https://github.com/alx-tools/Betty "Betty") repository
-* Clone the repo to your local machine
-* *cd* into the Betty directory
-* Install the linter with *sudo ./install.sh*
-* *emacs or vi* a new file called betty, and copy the script below:
-* Once saved, exit file and change permissions to apply to all users with *chmod a+x betty*
-* Move the *betty* file into */bin/* directory or somewhere else in your *$PATH with sudo mv betty /bin/*
-You can now type *betty <filename>* to run the Betty linter!
-
