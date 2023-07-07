@@ -5,8 +5,8 @@
 *
 * @c: Print character
 *
-* Return: on success 1.
-*on error, -1 is returned.
+* Return: on success 1
+* on error, return -1
 */
 
 int _putchar(char c)
