@@ -1,0 +1,53 @@
+
+# 0x0A. C - argc, argv
+
+## Resources
+### Read or watch:
+* [Arguments to main](https://publications.gbdirect.co.uk//c_book/chapter10/arguments_to_main.html)
+* [argc and argv](http://crasseux.com/books/ctutorial/argc-and-argv.html)
+* [What does argc and argv mean?](https://www.youtube.com/watch?v=aP1ijjeZc24)
+* [how to compile with unused variables](https://www.google.com/webhp?q=unused+variable+C)
+
+# Learning Objectives
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/?fbclid=IwAR2K5_BGPVo0QjJXkOIIqNsqcXK4lTskPWJvA0asKQIGtCPWaQBdKmj1Ztg "explain to anyone"), without the help of Google:
+## General
+* How to use arguments passed to your program
+* What are two prototypes of main that you know of, and in which case do you use one or the other
+* How to use __attribute__((unused)) or (void) to compile functions with unused variables or parameters
+## Copyright - Plagiarism
+* You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
+* You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
+* You are not allowed to publish any content of this project.
+* Any form of plagiarism is strictly forbidden and will result in removal from the program.
+# Requirements
+# C
+* Allowed editors: *vi, vim, emacs*
+* All your files will be compiled on Ubuntu 20.04 LTS using *gcc*, using the options *-Wall -Werror -Wextra -pedantic -std=gnu89*
+* All your files should end with a new line
+* A README.md file, at the root of the folder of the project is mandatory
+* There should be no errors and no warnings during compilation
+* You are not allowed to use *system*
+* Your code should use the *Betty* style. It will be checked using [betty-style.pl](https://github.com/alx-tools/Betty/blob/master/betty-style.pl "betty-style.pl") and [betty-doc.pl](https://github.com/alx-tools/Betty/blob/master/betty-doc.pl "betty-doc.pl")
+* You are not allowed to use global variables
+* No more than 5 functions per file
+* The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h
+* Don’t forget to push your header file
+* You are allowed to use the standard library
+# Shell Scripts
+* Allowed editors: *vi, vim, emacs*
+* All your scripts will be tested on Ubuntu 20.04 LTS
+* All your scripts should be exactly two lines long (*$ wc -l file* should print 2)
+* All your files should end with a new line
+* The first line of all your files should be exactly *#!/bin/bash*
+# More Info
+## Betty linter
+To run the Betty linter just with command *betty <filename>:*
+* Go to the [Betty](https://github.com/alx-tools/Betty "Betty") repository
+* Clone the repo to your local machine
+* *cd* into the Betty directory
+* Install the linter with *sudo ./install.sh*
+* *emacs or vi* a new file called betty, and copy the script below:
+* Once saved, exit file and change permissions to apply to all users with *chmod a+x betty*
+* Move the *betty* file into */bin/* directory or somewhere else in your *$PATH with sudo mv betty /bin/*
+You can now type *betty <filename>* to run the Betty linter!
+
