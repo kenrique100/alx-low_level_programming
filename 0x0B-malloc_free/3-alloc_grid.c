@@ -6,9 +6,9 @@
 *
 * @width: width of matrix
 * @height: height of matrix
+* Description: creates a two dimensional array of ints
 *
-* Return: pointer to 2-D array of ints matrix (success),
-* Null (error)
+* Return: pointer to 2-D array of ints matrix (success), Null (error)
 */
 
 int **alloc_grid(int width, int height)
