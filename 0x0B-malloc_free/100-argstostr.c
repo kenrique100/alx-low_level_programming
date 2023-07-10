@@ -14,9 +14,13 @@ int i, j, len, count;
 char *p;
 
 if (ac == 0)
+{
 return (NULL);
+}
 if (av == NULL)
+{
 return (NULL);
+}
 
 i = j = len = count = 0;
 for (i = 0; av[i]; i++)
