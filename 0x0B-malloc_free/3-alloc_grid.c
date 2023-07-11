@@ -2,11 +2,11 @@
 #include "main.h"
 
 /*
-* **alloc_grid - function that creates a 2-D array of ints
+* alloc_grid - function that creates a 2-D array of ints
 *
-* @width: width of matrix
-* @height: height of matrix
-* Description: creates a two dimensional array of ints
+* @width: width of the matrix
+* @height: height of the matrix
+* Description: creates a two-dimensional array of ints
 *
 * Return: pointer to 2-D array of ints matrix (success), Null (error)
 */
