@@ -5,7 +5,7 @@ For this project, we expect you to look at this concept:
 
 # Resources
 ### Read or watch:
-* [Do I cast the result of malloc?]()
+* [Do I cast the result of malloc?](https://stackoverflow.com/questions/605845/do-i-cast-the-result-of-malloc)
 ### man or help:
 * exit (3)
 * calloc
