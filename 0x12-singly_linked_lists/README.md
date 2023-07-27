@@ -41,3 +41,21 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called lists.h
 * Don’t forget to push your header file
 - All your header files should be include guarded
+
+# More Info
+```
+/**
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ */
+typedef struct list_s
+{
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
+```
