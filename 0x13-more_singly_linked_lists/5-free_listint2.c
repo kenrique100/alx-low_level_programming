@@ -19,7 +19,7 @@ temp = *head;
 while (temp != NULL)
 {
 count = temp;
-current = temp->next;
+count = temp->next;
 free(count);
 }
 *head = NULL;
