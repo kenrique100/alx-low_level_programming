@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-* free_listint - delete function
+* free_listint - delete function ti free lists
 *
 * @head: describe argument
 *
