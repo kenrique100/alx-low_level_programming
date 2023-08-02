@@ -4,7 +4,7 @@
 /**
 * reverse_listint - function to reverse a list
 *
-* @head: describse argument
+* @head: describe argument
 * Return: reverse list
 */
 listint_t *reverse_listint(listint_t **head)
