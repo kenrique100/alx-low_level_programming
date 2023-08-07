@@ -11,26 +11,43 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int text, total, status;
-char buffer[BUFFSIZE];
+int text;
+char *buffer;
+ssize_t total, status;
 
-if (filename == NULL)
+if (!filename)
 return (0);
-text = open(filename, O_RDONLY);
-if (text == -1)
-return (0);
-total = 0;
-status = 1;
-while (letters > BUFFSIZE && read_status != 0)
+status = open(filename, O_RDONLY);
+if (status == -1)
 {
-status = read(text, buffer, BUFFSIZE);
-write(STDOUT_FILENO, buffer, status);
-total += status;
-letters -= BUFFSIZE;
+close(status);
+return (0);
 }
-status = read(text, buffer, letters);
-write(STDOUT_FILENO, buffer, status);
-total += status;
-close(text);
+
+buffer = malloc(sizeof(char) * letters);
+if (!buffer)
+{
+close(status);
+return (0);
+}
+
+total = read(status, buffer, letters);
+
+if (total == -1)
+{
+close(status);
+free(buffer);
+return (0);
+}
+
+text = write(STDOUT_FILENO, buffer, total);
+
+if (text == -1)
+{
+close(status);
+free(buffer);
+return (0);
+}
+close(status);
 return (total);
 }
