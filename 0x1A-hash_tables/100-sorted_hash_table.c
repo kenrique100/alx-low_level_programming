@@ -23,13 +23,13 @@ ht = malloc(sizeof(shash_table_t));
 if (ht == NULL)
 return (NULL);
 
-ht->size = size;
+    ht->size = size;
 ht->array = malloc(sizeof(shash_node_t *) * size);
 if (ht->array == NULL)
 return (NULL);
-for (i = 0; i < size; i++)
+    for (i = 0; i < size; i++)
 ht->array[i] = NULL;
-ht->shead = NULL;
+    ht->shead = NULL;
 ht->stail = NULL;
 
 return (ht);
@@ -53,11 +53,11 @@ unsigned long int index;
 if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 return (0);
 
-value_copy = strdup(value);
+    value_copy = strdup(value);
 if (value_copy == NULL)
 return (0);
 
-index = key_index((const unsigned char *)key, ht->size);
+    index = key_index((const unsigned char *)key, ht->size);
 tmp = ht->shead;
 while (tmp)
 {
@@ -106,13 +106,13 @@ else
 tmp = ht->shead;
 while (tmp->snext != NULL && strcmp(tmp->snext->key, key) < 0)
 tmp = tmp->snext;
-new->sprev = tmp;
+    new->sprev = tmp;
 new->snext = tmp->snext;
 if (tmp->snext == NULL)
 ht->stail = new;
 else
 tmp->snext->sprev = new;
-tmp->snext = new;
+    tmp->snext = new;
 }
 
 return (1);
@@ -135,15 +135,15 @@ unsigned long int index;
 if (ht == NULL || key == NULL || *key == '\0')
 return (NULL);
 
-index = key_index((const unsigned char *)key, ht->size);
+    index = key_index((const unsigned char *)key, ht->size);
 if (index >= ht->size)
 return (NULL);
 
-node = ht->shead;
+    node = ht->shead;
 while (node != NULL && strcmp(node->key, key) != 0)
 node = node->snext;
 
-return ((node == NULL) ? NULL : node->value);
+    return ((node == NULL) ? NULL : node->value);
 }
 
 /**
@@ -157,7 +157,7 @@ shash_node_t *node;
 if (ht == NULL)
 return;
 
-node = ht->shead;
+    node = ht->shead;
 printf("{");
 while (node != NULL)
 {
@@ -180,7 +180,7 @@ shash_node_t *node;
 if (ht == NULL)
 return;
 
-node = ht->stail;
+    node = ht->stail;
 printf("{");
 while (node != NULL)
 {
@@ -204,7 +204,7 @@ shash_node_t *node, *tmp;
 if (ht == NULL)
 return;
 
-node = ht->shead;
+    node = ht->shead;
 while (node)
 {
 tmp = node->snext;
